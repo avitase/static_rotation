@@ -27,6 +27,7 @@ The output of this snippet is
 3 0 1 2
 ```
 You can run the snippet on Compiler Explorer: [godbolt.org/z/uNmXFr](https://godbolt.org/z/uNmXFr)
+
 `IndexRotations<N>` generates the rotations for an index sequence `(0, 1, 2, ..., N)`. If you need the rotations for arbitrary sequences you may use `Rotations` directly, e.g.
 ```
 Rotations<int, 4, 8, 15, 16, 23, 42>;
