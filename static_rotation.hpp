@@ -16,7 +16,7 @@ namespace detail {
  * (1, 2, 3, 0) and
  * (2, 3, 0, 1).
  *
- * @tparam N number of consecutive rotations (as std::integral_constant)
+ * @tparam N number of consecutive rotations (as std::integral_constant with value_type std::size_t)
  * @tparam T value type of the integral sequence
  * @tparam head first element of integral sequence
  * @tparam tail tail of integral sequence
@@ -88,6 +88,7 @@ struct Rotator<std::integral_constant<std::size_t, 0>, T, head, tail...> {
  *
  * @tparam T value type of the integral sequence
  * @tparam values integral sequence
+ * @sa details::Rotator
  */
 template <typename T, T... values>
 using Rotations
@@ -107,8 +108,10 @@ make_index_rotations(std::integer_sequence<std::size_t, idxs...>) noexcept {
  *
  * The IndexRotations class generates all rotations of an ascending integers sequence of type std::size_t.
  * The integer sequence starts with zero and ends with N-1, e.g. (0, 1, 2, 3, 4) for N = 5.
+ * IndexRotations is an alias of the Rotations class.
  *
  * @tparam N upper bound for generated sequence
+ * @sa Rotations
  */
 template <std::size_t N>
 using IndexRotations = decltype(detail::make_index_rotations(std::make_index_sequence<N>{}));
