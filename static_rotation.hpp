@@ -54,7 +54,6 @@ class Rotator {
     /**
      * All Sequences, consecutively stored in a std::array, e.g.:
      * (0, 1, 2, 1, 2, 0, 2, 0, 1) for the (underlying) sequence (0, 1, 2).
-     * The length of the array is always the squared number of elements of the underlying sequence.
      */
     constexpr static auto values = to_array(seq);
 };
