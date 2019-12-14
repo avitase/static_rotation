@@ -106,9 +106,9 @@ make_index_rotations(std::integer_sequence<std::size_t, idxs...>) noexcept {
  * @class IndexRotations
  * @brief Generates all rotations of an ascending integer sequence.
  *
- * The IndexRotations class generates all rotations of an ascending integers sequence of type std::size_t.
- * The integer sequence starts with zero and ends with N-1, e.g. (0, 1, 2, 3, 4) for N = 5.
- * IndexRotations is an alias of the Rotations class.
+ * The IndexRotations class generates all rotations of an ascending integers sequence of type
+ * std::size_t. The integer sequence starts with zero and ends with N-1, e.g. (0, 1, 2, 3, 4)
+ * for N = 5. IndexRotations is an alias of the Rotations class.
  *
  * @tparam N upper bound for generated sequence
  * @sa Rotations
