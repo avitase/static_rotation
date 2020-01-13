@@ -1,5 +1,5 @@
 # `static_rotation`
-`static_rotation` is a [header-only](static_rotation.hpp) library that uses template meta programming to generate all rotations of a given integral sequence at compile-time. 
+`static_rotation` is a [header-only](static_rotation.hpp) library that uses template meta programming to generate all rotations of a given integer sequence at compile-time. 
 
 ## Example
 The snippet below generates all rotations of the sequence `(0,1,2,3)` and stores them in a `std::array<std::size_t, 16>`:
