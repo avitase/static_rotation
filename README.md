@@ -28,12 +28,12 @@ The output of this snippet is
 ```
 You can run the snippet on Compiler Explorer: [godbolt.org/z/uNmXFr](https://godbolt.org/z/uNmXFr)
 
-`IndexRotations<N>` generates the rotations for an index sequence `(0, 1, 2, ..., N)`. If you need the rotations for arbitrary sequences you may use `Rotations` directly, e.g.
+`IndexRotations<N>` generates the rotations for an index sequence `(0, 1, 2, ..., N)`. If the rotations for arbitrary sequences are needed, one may use `Rotations` directly, e.g.
 ```
 Rotations<int, 4, 8, 15, 16, 23, 42>;
 ```
 see [godbolt.org/z/fWeikA](https://godbolt.org/z/fWeikA) for a complete example.
-For more details and a richer documentation take a look at [static_rotation.hpp](static_rotation.hpp).
+For more details take a look at [static_rotation.hpp](static_rotation.hpp).
 
 ## Installatation
 This library is header-only and including [static_rotation.hpp](static_rotation.hpp) is sufficient.
